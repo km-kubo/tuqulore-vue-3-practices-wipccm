@@ -1,7 +1,6 @@
 <template>
   <button @click="toggle = !toggle">toggle</button>
-  {{ toggle }}
-  <ChildComponent :is-show="toggle" />
+  <ChildComponent :student="{ name: 'kubo', old: '30' }" />
 </template>
 
 <script setup>
